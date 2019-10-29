@@ -19,6 +19,8 @@ print(names[11:0:-1])
 print(names[:0:-1])
 
 # problem two
+
+
 def are_duplicates(nums):
     for x in range(len(nums)):
         for y in range(x + 1, len(nums)):
@@ -26,20 +28,49 @@ def are_duplicates(nums):
                 return True
     return False
 
+
 print(are_duplicates([100, 2, 3, 4, 101]))
 
 # problem three
-def add_numbers():
-    for x in range():
-        if
+
+
+def add_numbers(nums):
+    total = 0
+    for x in nums:
+        total += x
+    return total
+
+
+print(add_numbers([9, 5, 11, 6, 1, 15]))
 
 # problem four
+
+
 def has22(nums):
     for x in range(len(nums)-1):
         if nums[x] == 2 and nums[x + 1] == 2:
             return True
     return False
 
+
 print(has22([1, 2, 3, 4, 5, 2, 2]))
 
+# problem five
+
+
+def is_sorted(nums):
+    for x in range(len(nums)-1):
+        if nums[x + 1] > nums[x]:
+            return True
+    return False
+
+
+print(is_sorted([1, 2, 2, 3, 5]))
+
+# problem six
+#
+def remove_duplicates(nums):
+    for x in range(len(nums)):
+        for y in range(x + 1, len(nums)):
+            if nums[x] == nums[y]:
 

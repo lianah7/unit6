@@ -68,9 +68,42 @@ def is_sorted(nums):
 print(is_sorted([1, 2, 2, 3, 5]))
 
 # problem six
-#
-def remove_duplicates(nums):
-    for x in range(len(nums)):
-        for y in range(x + 1, len(nums)):
-            if nums[x] == nums[y]:
 
+
+def remove_duplicates(nums):
+    removed = []
+    for x in nums:
+        if x not in removed:
+            removed.append(x)
+    return removed
+
+
+print(remove_duplicates([1, 2, 2, 3, 4, 5, 6, 6, 7, 7, 7]))
+
+
+# problem seven
+
+
+def get_max(nums):
+    maximum = nums[0]
+    for x in nums:
+        if x > maximum:
+            maximum = x
+    return maximum
+
+
+print(get_max([-6, -89, 2, 45, 19]))
+
+
+# problem eight
+
+
+def get_max(nums):
+    minimum = nums[0]
+    for x in nums:
+        if x < minimum:
+            minimum = x
+    return minimum
+
+
+print(get_max([89, 70, -34, -5]))

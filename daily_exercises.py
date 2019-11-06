@@ -92,13 +92,13 @@ def get_max(nums):
     return maximum
 
 
-print(get_max([-6, -89, 2, 45, 19]))
+print(get_max([-6, -89, 2, 45, 19, 102, -103]))
 
 
 # problem eight
 
 
-def get_max(nums):
+def get_min(nums):
     minimum = nums[0]
     for x in nums:
         if x < minimum:
@@ -106,4 +106,8 @@ def get_max(nums):
     return minimum
 
 
-print(get_max([89, 70, -34, -5]))
+print(get_min([89, 70, -34, -5, -107, 180]))
+
+
+
+
